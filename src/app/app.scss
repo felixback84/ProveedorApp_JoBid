@@ -1,0 +1,90 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.center{ text-align: center; }
+.item-md p.version,.item-ios p.version{text-align: right;margin-top: -15px;}
+.loginOut, .loginOut .label-md,.loginOut .label-ios{background:#666666; color: white !important;}
+ion-item.item-md ion-icon.nota[item-start], ion-item.item-ios ion-icon.nota[item-start]{ 
+    background: transparent; padding: 0; margin: 0; color: #b20000;height: 20px;min-width:15px; }
+ion-item.imgUser.item-md, ion-item.imgUser.item-ios{
+    ion-thumbnail ion-img, ion-thumbnail img,
+    ion-thumbnail ion-img, ion-thumbnail img{ width: 80px; height: 80px; border-radius: 40px;}
+    padding-left:16px;
+}
+.toolbar-md .tittleMenu, .toolbar-ios .tittleMenu{text-align: center;}
+
+.Calificacion{
+    display: inline-block;
+    margin: 0;
+    margin-left: 5px;
+    label{
+        display: inline-block;
+        // font-size: 20px;
+    }
+    &.cinco{
+        label:nth-child(5){ color: $Red; }
+        label:nth-child(4){ color: $Red; }
+        label:nth-child(3){ color: $Red; }
+        label:nth-child(2){ color: $Red; }
+        label:nth-child(1){ color: $Red; }
+    }
+    &.cuatro{
+        label:nth-child(4){ color: $Red; }
+        label:nth-child(3){ color: $Red; }
+        label:nth-child(2){ color: $Red; }
+        label:nth-child(1){ color: $Red; }
+    }
+    &.tres{
+        label:nth-child(3){ color: $Red; }
+        label:nth-child(2){ color: $Red; }
+        label:nth-child(1){ color: $Red; }
+    }
+    &.dos{
+        label:nth-child(2){ color: $Red; }
+        label:nth-child(1){ color: $Red; }
+    }
+    &.uno{
+        label:nth-child(1){ color: $Red; }
+    }
+}
+.Calificacion.Usuario{
+    label{
+        font-size: 20px;
+    }
+}
+
+.noLogueado{
+    float: right;
+    margin-right: 20px;
+}
+.imgLogo{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    &>img{
+        width: 80px;
+        margin: 0 auto;
+    }
+}
+.linkPagina{
+    span{
+        font-style: italic;
+    }
+    .label {
+        text-align: center;
+    }
+}

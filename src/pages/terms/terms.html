@@ -1,0 +1,52 @@
+<!--
+  Generated template for the TermsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Terms</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <img src="assets/img/JoBidProveedor.jpg">
+      <!-- <p><strong>Terms and Conditions:</strong></p>
+<p  padding class="terms"> 
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus tempora vel culpa cupiditate dolor dolores inventore accusantium quae nostrum, eum quisquam beatae tenetur eligendi ex aperiam quos, enim velit illo!
+  Sapiente at facilis quibusdam enim quasi perferendis rem voluptatem provident ex, illo accusamus facere dicta est magnam quidem minima optio debitis dolorem, omnis laborum quisquam inventore, iusto eos. Earum, iusto.
+  Fugiat tenetur obcaecati excepturi sint iste natus vel, ipsum voluptate aperiam impedit modi sequi doloremque ut quaerat amet, sapiente temporibus rem perspiciatis laboriosam porro repellendus hic autem eligendi! Vero, numquam.
+  Omnis laboriosam illum magni fugit accusantium! Soluta temporibus deleniti distinctio repellat dolor, at numquam. Commodi odio autem, ducimus beatae facilis reiciendis tempora amet? Facilis ipsa deserunt, quo doloribus ea adipisci!
+  Iusto, eius. Aliquid blanditiis expedita id iusto debitis eos, inventore voluptates eligendi libero, totam sed et? Dolorum hic eligendi officiis voluptas omnis possimus sit, laudantium magni ipsum molestiae accusantium? Incidunt.
+  Ea facere quam enim. Magnam odit impedit accusantium esse natus? Sequi repellat consequatur aut cupiditate doloribus.
+</p> -->
+<!-- Termly Tracking Code -->
+
+<iframe width="100%" height="100%" src="https://app.termly.io/document/terms-of-use-for-website/20dc6ff3-da70-46f8-a778-f39201107cd5" frameborder="0" allowfullscreen>
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid padding>
+      <ion-row>
+        <ion-col col-10>
+            <ion-list >
+            <!-- <ion-list radio-group [(ngModel)]="termsValue"> -->
+              <ion-item>
+              <ion-label>Accept the terms and conditions:</ion-label>
+              <ion-checkbox [(ngModel)]="termsValue" ></ion-checkbox>
+            </ion-item></ion-list>
+        </ion-col>
+        <ion-col col-2>
+            <button  ion-button block (click)="goProviderInfo()" icon-only round color="danger" [disabled]="!termsValue">
+								<ion-icon name="arrow-dropright"></ion-icon>
+						</button>
+            </ion-col>
+           </ion-row>
+          </ion-grid>  
+        </ion-toolbar>
+      </ion-footer>

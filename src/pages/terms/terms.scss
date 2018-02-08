@@ -1,0 +1,28 @@
+page-terms {
+    p{
+        text-align: center;
+    }
+    .btnAddPicture{
+        // background:$Red; 
+        // padding-left:10px; 
+        width:200px;
+        button{
+            background:$Red; 
+            color:white;
+            border: none;
+            box-shadow: none;
+            // &.button-md:hover:not(.disable-hover){
+            //     background: $Red;
+            // } 
+        }
+    }
+    .terms{
+        text-align: justify;
+    }
+    .toolbar {
+        .grid,ion-item.item-md, ion-item.item-ios, .list-md, .list-ios{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

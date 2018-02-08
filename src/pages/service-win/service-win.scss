@@ -1,0 +1,26 @@
+page-service-win {
+    img{width: 100%; height: auto;}
+    .centrarIcon{width: 100%;
+        ion-icon.icon-ok{
+            font-size: 90px; color: $Green;margin: 0 auto;
+            width: 74px; display: block;}
+    }
+    h2,h3,h4,p{
+        text-align: center;
+        color: $GrayText;
+        width: 80%;
+        margin: 10px auto;
+    }
+    h3{
+        color: $Red;
+    }
+    #ImgWin{
+        text-align: center;
+        img{
+            margin-top:25px;
+            margin-bottom:10px;
+            height: 120px;
+            width: 120px;
+        }
+    }
+}
